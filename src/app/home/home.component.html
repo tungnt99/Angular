@@ -7,5 +7,8 @@
     <a href="tel:0904714322">0904714322</a> <br>
     <a href="mailto:thanhtung99yl@gmail.com">thanhtung99yl@gmail.com</a>
     <h2>Chào bạn {{name}}</h2>
-    <input type="text" value="{{name}}" title="Đây là {{name}}">
+    <!-- <input type="text" value="{{name}}" title="Đây là {{name}}"> -->
+    <h3 *ngIf="age > 18">Bạn quá già rồi!</h3>
+    <h3 *ngIf="age <= 18">Bạn còn trẻ trâu!</h3>
+
 </div>
