@@ -2,19 +2,15 @@
 
     <h1>Đây là Component Home</h1>
     <p>Nguyễn Thanh Tùng</p>
-
     <p>An Khánh - Hoài Đức - Hà Nội</p>
 
+    <h1>Trái cây</h1>
+    <div *ngFor="let trai of traicay; let i = index">
 
-    <input type="text" [(ngModel)]="age">
-    <h2>Tuổi bạn là {{age}}</h2>
-    <!-- <h2 *ngIf="age > 18">Bạn đã già rồi</h2>
-    <h2 *ngIf="age <= 18">Bạn còn trẻ trâu</h2> -->
-    <div *ngIf="age <= 18; then tre; else gia"></div>
-    <ng-template #gia>
-        <h2> Bạn đã già rồi</h2>
-    </ng-template>
-    <ng-template #tre>
-        <h2>Bạn còn trẻ trâu</h2>
-    </ng-template>
+        <li>{{i+1}}. {{trai}}</li>
+
+    </div>
+
+
+
 </div>
